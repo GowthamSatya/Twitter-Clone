@@ -25,10 +25,64 @@
   }
 }
 
+.pollselect__control {
+  background-color: black !important;
+  border: 1px solid rgb(107 114 128) !important;
+  border-radius: 0.5rem !important;
+  height: 3rem !important;
+}
+
+.pollselect__control--is-focused {
+  box-shadow: 0 0 0 1px #31a4f1 !important;
+}
+
+.pollselect__menu {
+  background-color: black !important;
+}
+
+.pollselect__option:hover {
+  color: black;
+}
+
+.pollselect__single-value {
+  color: rgb(209 213 219) !important;
+}
+
+.pollselect__indicator {
+  color: rgb(107 114 128) !important;
+}
+
+.pollselect__indicator-separator {
+  background-color: rgb(107 114 128) !important;
+}
+
+.emoji-mart {
+  margin: 10px 0 0 0 !important;
+}
+
 @layer components {
   .hoverAnimation {
     @apply hover:bg-[#d9d9d9] hover:bg-opacity-20 rounded-full cursor-pointer w-[52px] h-[52px]
     xl:w-auto xl:h-auto xl:py-3 xl:px-4
     transition duration-200 ease-out;
+  }
+
+  .iconHoverAnimation {
+    @apply hover:bg-[#d9d9d9] hover:bg-opacity-20 rounded-full cursor-pointer w-[52px] h-[52px]
+    transition duration-200 ease-out;
+  }
+
+  .iconHoverAnimationColor {
+    @apply hover:bg-[#31a4f1] hover:bg-opacity-20 rounded-full cursor-pointer w-[52px] h-[52px]
+    transition duration-200 ease-out;
+  }
+
+  .iconHoverAnimationError {
+    @apply hover:bg-red-500 hover:bg-opacity-10 cursor-pointer
+    transition duration-200 ease-out;
+  }
+
+  .icon {
+    @apply cursor-pointer;
   }
 }

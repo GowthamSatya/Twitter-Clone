@@ -1,5 +1,6 @@
 import { SparklesIcon } from "@heroicons/react/outline";
-import CreatePost from "./atoms/CreatePost";
+import CreatePost from "./molecules/CreatePost";
+import Post from "./molecules/Post";
 import React from "react";
 
 const Feed = () => {
@@ -10,6 +11,7 @@ const Feed = () => {
         <SparklesIcon className="w-7 text-gray-300" />
       </div>
       <CreatePost />
+      <Post />
     </div>
   );
 };
